@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>業績看板.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>D4D413671911F96506E97070F98760EC96F74446</string>
+				<key>dateExpires</key>
+				<string>2020/8/27</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>MD7N2N9MZ7.hk.com.ftluat.das</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>MD7N2N9MZ7</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>業績看板.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>55bf6799-7ad9-4069-a418-167e209d6cda</string>
+				<key>name</key>
+				<string>P06 Dashboard UAT 2019 re</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>MD7N2N9MZ7</string>
+				<key>name</key>
+				<string>FTLife Insurance Company Limited</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

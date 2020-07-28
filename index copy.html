@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<a id="id" download="https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/app.apk">下载安装包</a>
+<button id="btn">销毁</button>
+<script>
+    let blob = new Blob(['hello world'],{type:'text/plain'})
+    let url = URL.createObjectURL(blob)
+    document.getElementById('id').href = url
+    document.getElementById('btn').onclick = function () {
+        URL.revokeObjectURL(url)
+    }
+</script>
+</body>
+</html>

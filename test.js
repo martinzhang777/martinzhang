@@ -5,3 +5,4 @@ https://raw.githubusercontent.com/martinzhang777/martinzhang/master/00.jpg
 https://raw.githubusercontent.com/martinzhang777/martinzhang/master/Info.plist
 https://raw.githubusercontent.com/martinzhang777/martinzhang/master/業績看板.ipa
 https://raw.githubusercontent.com/martinzhang777/martinzhang/master/index.html
+https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/index.html

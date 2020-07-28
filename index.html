@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/martinzhang777/martinzhang/master/Info.plist">下载安装</a>
-  <a href="itms-services://?action=download-manifest&url=https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/Info.plist">下载安装2</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upload</title>
+  </head>
+  <body>
+    <a id="id" onclick="download()">下载安装(Andriod)</a>
+    <!--
+      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/martinzhang777/martinzhang/master/Info.plist">下载安装1</a>
+    -->
+    <!--
+      <a href="itms-services://?action=download-manifest&url=https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/Info.plist">下载安装2</a>
+    -->
+  </body>
+  <script>
+    const u = navigator.userAgent;
+    const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; // android终端
+    let blob = new Blob(['安装'], { type: 'text/plain' });
+    let url = URL.createObjectURL(blob);
+    document.getElementById('id').href = url;
+    document.getElementById('id').download =
+      'https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/app.apk';
+    if (isAndroid) {
+
+      // var blob = new Blob([data],{
+      //   type:"application/msword"
+      // })
+      // var url = URL.createObjectURL(blob)
+      // var link = document.createElement('a')
+      // link.setAttribute('href',url)
+      // link.style.visibility = 'hidden'
+      // document.body.appendChild(link)
+      // link.click()
+      // document.body.removeChild(link)
+      // var url = 'https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/app.apk'
+      // window.location.href =
+      //   'https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/app.apk';
+    } else {
+      document.getElementById('id').style.visibility = 'hidden'
+      window.location.href =
+        'itms-services://?action=download-manifest&url=https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/Info.plist';
+    }
+  </script>
 </html>

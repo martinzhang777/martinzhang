@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    <body>
+      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/martinzhang777/martinzhang/master/Info.plist">下载安装1</a>
+      <a href="itms-services://?action=download-manifest&url=https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/Info.plist">下载安装2</a>
+    </body>
+  -->
+  <script>
+    // window.location.href = 'itms-services://?action=download-manifest&url=https://facetowind-1253363448.cos.ap-beijing.myqcloud.com/Info.plist'
+
+
+    //js判断当前移动设备平台
+
+    var isiOs = false;
+
+    var isAndroid = false;
+
+    var isWindowsPhone = false;
+
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+      isiOS = true;
+    } else if (/(Android)/i.test(navigator.userAgent)) {
+      isAndroid = true;
+    } else if (/(Windows Phone)/i.test(navigator.userAgent)) {
+      isWindowsPhone = true;
+    }
+
+    if(isiOS){
+      window.location.href =
+      'itms-services://?action=download-manifest&url=http://192.168.1.38:8080/Info.plist';
+    }else{
+      alert('isAndroid')
+    }
+  </script>
+</html>
